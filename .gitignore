@@ -4,7 +4,7 @@
 *.zip
 *.bak
 keys.txt
-application.conf
+#application.conf
 application-dev.conf
 reference.conf
 nbactions.xml
