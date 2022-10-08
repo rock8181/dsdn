@@ -2442,11 +2442,11 @@ public class ScooldConfig extends Config {
 
 	@Documented(position = 2350,
 			identifier = "logo_url",
-			value = "/images/logo.svg",
+			value = "/images/logo_samsung.svg",
 			category = "Frontend Assets",
 			description = "The URL of the logo in the nav bar. Use a PNG, SVG, JPG or WebP format.")
 	public String logoUrl() {
-		return getConfigParam("logo_url", imagesLink() + "/logo.svg");
+		return getConfigParam("logo_url", imagesLink() + "/logo_samsung.svg");
 	}
 
 	@Documented(position = 2360,
