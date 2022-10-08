@@ -1,0 +1,390 @@
+2022-10-08 15:59:07,701 [INFO ] com.erudika.scoold.ScooldServer - Starting ScooldServer using Java 17.0.4.1 on DESKTOP-J6Q99D4 with PID 1096 (W:\work\scoold\scoold\target\classes started by Sam Chon in W:\work\scoold)
+2022-10-08 15:59:07,719 [INFO ] com.erudika.scoold.ScooldServer - The following 1 profile is active: "development"
+2022-10-08 15:59:11,139 [INFO ] com.erudika.scoold.ScooldServer - No configuration file found - configuration saved in scoold-application.conf.
+2022-10-08 15:59:11,310 [INFO ] com.erudika.scoold.ScooldServer - Scoold server is listening on http://localhost:8000
+2022-10-08 15:59:11,343 [WARN ] com.erudika.para.client.ParaClient - Secret key appears to be invalid. Make sure you call 'signIn()' first.
+2022-10-08 15:59:12,158 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 1 of 10)...
+2022-10-08 15:59:13,926 [INFO ] com.erudika.scoold.ScooldServer - Started ScooldServer in 7.306 seconds (JVM running for 10.954)
+2022-10-08 15:59:22,189 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 2 of 10)...
+2022-10-08 15:59:32,214 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 3 of 10)...
+2022-10-08 15:59:42,231 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 4 of 10)...
+2022-10-08 15:59:52,255 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 5 of 10)...
+2022-10-08 16:00:02,277 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 6 of 10)...
+2022-10-08 16:00:12,302 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 7 of 10)...
+2022-10-08 16:00:19,856 [WARN ] o.eclipse.jetty.server.HttpChannel - /
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.RuntimeException: Failed to execute signed GET request to /v1/question/search/default: Connect to http://localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:645)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:799)
+	at org.eclipse.jetty.servlet.ServletHandler$ChainEnd.doFilter(ServletHandler.java:1656)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:552)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1440)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:505)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1355)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:772)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:487)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:732)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:479)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.RuntimeException: Failed to execute signed GET request to /v1/question/search/default: Connect to http://localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+	at com.erudika.para.client.ParaClient.invokeSignedRequest(ParaClient.java:508)
+	at com.erudika.para.client.ParaClient.invokeGet(ParaClient.java:400)
+	at com.erudika.para.client.ParaClient.find(ParaClient.java:1115)
+	at com.erudika.para.client.ParaClient.findQuery(ParaClient.java:927)
+	at com.erudika.scoold.controllers.QuestionsController.getQuestions(QuestionsController.java:319)
+	at com.erudika.scoold.controllers.QuestionsController.get(QuestionsController.java:85)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	... 45 common frames omitted
+2022-10-08 16:00:22,340 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 8 of 10)...
+2022-10-08 16:00:32,355 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 9 of 10)...
+2022-10-08 16:00:42,409 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 10 of 10)...
+2022-10-08 16:01:41,943 [INFO ] com.erudika.scoold.ScooldServer - Starting ScooldServer using Java 17.0.4.1 on DESKTOP-J6Q99D4 with PID 7628 (W:\work\scoold\scoold\target\classes started by Sam Chon in W:\work\scoold)
+2022-10-08 16:01:41,960 [INFO ] com.erudika.scoold.ScooldServer - The following 1 profile is active: "development"
+2022-10-08 16:01:45,496 [INFO ] com.erudika.scoold.ScooldServer - Scoold server is listening on http://localhost:8000
+2022-10-08 16:01:45,518 [WARN ] com.erudika.para.client.ParaClient - Secret key appears to be invalid. Make sure you call 'signIn()' first.
+2022-10-08 16:01:46,488 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 1 of 10)...
+2022-10-08 16:01:48,500 [INFO ] com.erudika.scoold.ScooldServer - Started ScooldServer in 7.495 seconds (JVM running for 10.871)
+2022-10-08 16:01:55,317 [WARN ] o.eclipse.jetty.server.HttpChannel - /
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.RuntimeException: Failed to execute signed GET request to /v1/question/search/default: Connect to http://localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:645)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:799)
+	at org.eclipse.jetty.servlet.ServletHandler$ChainEnd.doFilter(ServletHandler.java:1656)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:552)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1440)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:505)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1355)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:772)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:487)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:732)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:479)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.RuntimeException: Failed to execute signed GET request to /v1/question/search/default: Connect to http://localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+	at com.erudika.para.client.ParaClient.invokeSignedRequest(ParaClient.java:508)
+	at com.erudika.para.client.ParaClient.invokeGet(ParaClient.java:400)
+	at com.erudika.para.client.ParaClient.find(ParaClient.java:1115)
+	at com.erudika.para.client.ParaClient.findQuery(ParaClient.java:927)
+	at com.erudika.scoold.controllers.QuestionsController.getQuestions(QuestionsController.java:319)
+	at com.erudika.scoold.controllers.QuestionsController.get(QuestionsController.java:85)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	... 45 common frames omitted
+2022-10-08 16:01:56,517 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 2 of 10)...
+2022-10-08 16:02:06,552 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 3 of 10)...
+2022-10-08 16:02:16,590 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 4 of 10)...
+2022-10-08 16:02:26,600 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 5 of 10)...
+2022-10-08 16:02:36,643 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 6 of 10)...
+2022-10-08 16:02:46,669 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 7 of 10)...
+2022-10-08 16:02:56,693 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 8 of 10)...
+2022-10-08 16:03:06,740 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 9 of 10)...
+2022-10-08 16:07:07,799 [INFO ] com.erudika.scoold.ScooldServer - Starting ScooldServer using Java 17.0.4.1 on DESKTOP-J6Q99D4 with PID 2684 (W:\work\scoold\scoold\target\classes started by Sam Chon in W:\work\scoold)
+2022-10-08 16:07:07,817 [INFO ] com.erudika.scoold.ScooldServer - The following 1 profile is active: "development"
+2022-10-08 16:07:11,024 [INFO ] com.erudika.scoold.ScooldServer - Scoold server is listening on http://localhost:8000
+2022-10-08 16:07:11,047 [WARN ] com.erudika.para.client.ParaClient - Secret key appears to be invalid. Make sure you call 'signIn()' first.
+2022-10-08 16:07:11,966 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 1 of 10)...
+2022-10-08 16:07:13,715 [INFO ] com.erudika.scoold.ScooldServer - Started ScooldServer in 6.788 seconds (JVM running for 9.603)
+2022-10-08 16:07:22,005 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 2 of 10)...
+2022-10-08 16:07:32,053 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 3 of 10)...
+2022-10-08 16:07:42,115 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 4 of 10)...
+2022-10-08 16:08:02,983 [INFO ] com.erudika.scoold.ScooldServer - Starting ScooldServer using Java 17.0.4.1 on DESKTOP-J6Q99D4 with PID 9164 (W:\work\scoold\scoold\target\classes started by Sam Chon in W:\work\scoold)
+2022-10-08 16:08:02,999 [INFO ] com.erudika.scoold.ScooldServer - The following 1 profile is active: "development"
+2022-10-08 16:08:06,184 [INFO ] com.erudika.scoold.ScooldServer - Scoold server is listening on http://localhost:8000
+2022-10-08 16:08:06,201 [WARN ] com.erudika.para.client.ParaClient - Secret key appears to be invalid. Make sure you call 'signIn()' first.
+2022-10-08 16:08:07,174 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 1 of 10)...
+2022-10-08 16:08:08,955 [INFO ] com.erudika.scoold.ScooldServer - Started ScooldServer in 6.837 seconds (JVM running for 9.686)
+2022-10-08 16:08:27,668 [INFO ] com.erudika.scoold.ScooldServer - Starting ScooldServer using Java 17.0.4.1 on DESKTOP-J6Q99D4 with PID 19300 (W:\work\scoold\scoold\target\classes started by Sam Chon in W:\work\scoold)
+2022-10-08 16:08:27,686 [INFO ] com.erudika.scoold.ScooldServer - The following 1 profile is active: "development"
+2022-10-08 16:08:30,827 [INFO ] com.erudika.scoold.ScooldServer - Scoold server is listening on http://localhost:8000
+2022-10-08 16:08:30,844 [WARN ] com.erudika.para.client.ParaClient - Secret key appears to be invalid. Make sure you call 'signIn()' first.
+2022-10-08 16:08:31,715 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 1 of 10)...
+2022-10-08 16:08:33,467 [INFO ] com.erudika.scoold.ScooldServer - Started ScooldServer in 6.684 seconds (JVM running for 9.446)
+2022-10-08 16:08:41,740 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 2 of 10)...
+2022-10-08 16:08:51,762 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 3 of 10)...
+2022-10-08 16:09:01,823 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 4 of 10)...
+2022-10-08 16:09:11,836 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 5 of 10)...
+2022-10-08 16:09:21,851 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 6 of 10)...
+2022-10-08 16:09:31,867 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 7 of 10)...
+2022-10-08 16:09:41,897 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 8 of 10)...
+2022-10-08 16:10:07,510 [INFO ] com.erudika.scoold.ScooldServer - Starting ScooldServer using Java 17.0.4.1 on DESKTOP-J6Q99D4 with PID 11960 (W:\work\scoold\scoold\target\classes started by Sam Chon in W:\work\scoold)
+2022-10-08 16:10:07,524 [INFO ] com.erudika.scoold.ScooldServer - The following 1 profile is active: "development"
+2022-10-08 16:10:10,697 [INFO ] com.erudika.scoold.ScooldServer - Scoold server is listening on http://localhost:8000
+2022-10-08 16:10:10,717 [WARN ] com.erudika.para.client.ParaClient - Secret key appears to be invalid. Make sure you call 'signIn()' first.
+2022-10-08 16:10:11,560 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 1 of 10)...
+2022-10-08 16:10:13,344 [INFO ] com.erudika.scoold.ScooldServer - Started ScooldServer in 6.726 seconds (JVM running for 9.496)
+2022-10-08 16:10:21,579 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 2 of 10)...
+2022-10-08 16:10:31,602 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 3 of 10)...
+2022-10-08 16:10:41,625 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 4 of 10)...
+2022-10-08 16:10:51,646 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 5 of 10)...
+2022-10-08 16:11:01,670 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 6 of 10)...
+2022-10-08 16:11:11,716 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 7 of 10)...
+2022-10-08 16:11:21,756 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 8 of 10)...
+2022-10-08 16:11:31,770 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 9 of 10)...
+2022-10-08 16:11:41,804 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 10 of 10)...
+2022-10-08 16:16:01,705 [INFO ] com.erudika.scoold.ScooldServer - Starting ScooldServer using Java 17.0.4.1 on DESKTOP-J6Q99D4 with PID 23360 (W:\work\scoold\scoold\target\classes started by Sam Chon in W:\work\scoold)
+2022-10-08 16:16:01,722 [INFO ] com.erudika.scoold.ScooldServer - The following 1 profile is active: "development"
+2022-10-08 16:16:05,011 [INFO ] com.erudika.scoold.ScooldServer - Scoold server is listening on http://localhost:8000
+2022-10-08 16:16:05,034 [WARN ] com.erudika.para.client.ParaClient - Secret key appears to be invalid. Make sure you call 'signIn()' first.
+2022-10-08 16:16:05,864 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 1 of 10)...
+2022-10-08 16:16:07,646 [INFO ] com.erudika.scoold.ScooldServer - Started ScooldServer in 6.814 seconds (JVM running for 9.567)
+2022-10-08 16:16:15,910 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 2 of 10)...
+2022-10-08 16:16:25,949 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 3 of 10)...
+2022-10-08 16:16:35,989 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 4 of 10)...
+2022-10-08 16:17:39,602 [INFO ] com.erudika.scoold.ScooldServer - Starting ScooldServer using Java 17.0.4.1 on DESKTOP-J6Q99D4 with PID 2308 (W:\work\scoold\scoold\target\classes started by Sam Chon in W:\work\scoold)
+2022-10-08 16:17:39,619 [INFO ] com.erudika.scoold.ScooldServer - The following 1 profile is active: "development"
+2022-10-08 16:17:42,925 [INFO ] com.erudika.scoold.ScooldServer - Scoold server is listening on http://localhost:8000
+2022-10-08 16:17:42,949 [WARN ] com.erudika.para.client.ParaClient - Secret key appears to be invalid. Make sure you call 'signIn()' first.
+2022-10-08 16:17:43,906 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 1 of 10)...
+2022-10-08 16:17:45,729 [INFO ] com.erudika.scoold.ScooldServer - Started ScooldServer in 6.99 seconds (JVM running for 9.8)
+2022-10-08 16:17:53,927 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 2 of 10)...
+2022-10-08 16:18:03,955 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 3 of 10)...
+2022-10-08 16:18:13,977 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 4 of 10)...
+2022-10-08 16:18:24,023 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 5 of 10)...
+2022-10-08 16:22:36,173 [INFO ] com.erudika.scoold.ScooldServer - Starting ScooldServer using Java 17.0.4.1 on DESKTOP-J6Q99D4 with PID 15928 (W:\work\scoold\scoold\target\classes started by Sam Chon in W:\work\scoold)
+2022-10-08 16:22:36,188 [INFO ] com.erudika.scoold.ScooldServer - The following 1 profile is active: "development"
+2022-10-08 16:22:39,473 [INFO ] com.erudika.scoold.ScooldServer - Scoold server is listening on http://localhost:8000
+2022-10-08 16:22:39,493 [WARN ] com.erudika.para.client.ParaClient - Secret key appears to be invalid. Make sure you call 'signIn()' first.
+2022-10-08 16:22:40,355 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 1 of 10)...
+2022-10-08 16:22:42,075 [INFO ] com.erudika.scoold.ScooldServer - Started ScooldServer in 6.777 seconds (JVM running for 9.432)
+2022-10-08 16:22:50,401 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 2 of 10)...
+2022-10-08 16:23:07,163 [INFO ] com.erudika.scoold.ScooldServer - Starting ScooldServer using Java 17.0.4.1 on DESKTOP-J6Q99D4 with PID 20240 (W:\work\scoold\scoold\target\classes started by Sam Chon in W:\work\scoold)
+2022-10-08 16:23:07,177 [INFO ] com.erudika.scoold.ScooldServer - The following 1 profile is active: "development"
+2022-10-08 16:23:10,505 [INFO ] com.erudika.scoold.ScooldServer - Scoold server is listening on http://localhost:8000
+2022-10-08 16:23:10,524 [WARN ] com.erudika.para.client.ParaClient - Secret key appears to be invalid. Make sure you call 'signIn()' first.
+2022-10-08 16:23:11,351 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 1 of 10)...
+2022-10-08 16:23:13,087 [INFO ] com.erudika.scoold.ScooldServer - Started ScooldServer in 6.775 seconds (JVM running for 9.42)
+2022-10-08 16:23:48,510 [INFO ] com.erudika.scoold.ScooldServer - Starting ScooldServer using Java 17.0.4.1 on DESKTOP-J6Q99D4 with PID 2404 (W:\work\scoold\scoold\target\classes started by Sam Chon in W:\work\scoold)
+2022-10-08 16:23:48,525 [INFO ] com.erudika.scoold.ScooldServer - The following 1 profile is active: "development"
+2022-10-08 16:23:51,784 [INFO ] com.erudika.scoold.ScooldServer - Scoold server is listening on http://localhost:8000
+2022-10-08 16:23:51,806 [WARN ] com.erudika.para.client.ParaClient - Secret key appears to be invalid. Make sure you call 'signIn()' first.
+2022-10-08 16:23:52,646 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 1 of 10)...
+2022-10-08 16:23:54,377 [INFO ] com.erudika.scoold.ScooldServer - Started ScooldServer in 6.752 seconds (JVM running for 9.366)
+2022-10-08 16:24:02,692 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 2 of 10)...
+2022-10-08 16:24:12,734 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 3 of 10)...
+2022-10-08 16:24:22,773 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 4 of 10)...
+2022-10-08 16:24:32,814 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 5 of 10)...
+2022-10-08 16:24:47,681 [INFO ] com.erudika.scoold.ScooldServer - Starting ScooldServer using Java 17.0.4.1 on DESKTOP-J6Q99D4 with PID 15688 (W:\work\scoold\scoold\target\classes started by Sam Chon in W:\work\scoold)
+2022-10-08 16:24:47,695 [INFO ] com.erudika.scoold.ScooldServer - The following 1 profile is active: "development"
+2022-10-08 16:24:50,939 [INFO ] com.erudika.scoold.ScooldServer - Scoold server is listening on http://localhost:8000
+2022-10-08 16:24:50,956 [WARN ] com.erudika.para.client.ParaClient - Secret key appears to be invalid. Make sure you call 'signIn()' first.
+2022-10-08 16:24:51,761 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 1 of 10)...
+2022-10-08 16:24:53,457 [INFO ] com.erudika.scoold.ScooldServer - Started ScooldServer in 6.619 seconds (JVM running for 9.418)
+2022-10-08 16:25:23,025 [INFO ] com.erudika.scoold.ScooldServer - Starting ScooldServer using Java 17.0.4.1 on DESKTOP-J6Q99D4 with PID 12364 (W:\work\scoold\scoold\target\classes started by Sam Chon in W:\work\scoold)
+2022-10-08 16:25:23,042 [INFO ] com.erudika.scoold.ScooldServer - The following 1 profile is active: "development"
+2022-10-08 16:25:26,300 [INFO ] com.erudika.scoold.ScooldServer - Scoold server is listening on http://localhost:8000
+2022-10-08 16:25:26,319 [WARN ] com.erudika.para.client.ParaClient - Secret key appears to be invalid. Make sure you call 'signIn()' first.
+2022-10-08 16:25:27,164 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 1 of 10)...
+2022-10-08 16:25:28,907 [INFO ] com.erudika.scoold.ScooldServer - Started ScooldServer in 6.772 seconds (JVM running for 9.427)
+2022-10-08 16:25:37,184 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 2 of 10)...
+2022-10-08 16:25:47,200 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 3 of 10)...
+2022-10-08 16:28:26,765 [INFO ] com.erudika.scoold.ScooldServer - Starting ScooldServer using Java 17.0.4.1 on DESKTOP-J6Q99D4 with PID 24952 (W:\work\scoold\scoold\target\classes started by Sam Chon in W:\work\scoold)
+2022-10-08 16:28:26,781 [INFO ] com.erudika.scoold.ScooldServer - The following 1 profile is active: "development"
+2022-10-08 16:28:30,023 [INFO ] com.erudika.scoold.ScooldServer - Scoold server is listening on http://localhost:8000
+2022-10-08 16:28:30,045 [WARN ] com.erudika.para.client.ParaClient - Secret key appears to be invalid. Make sure you call 'signIn()' first.
+2022-10-08 16:28:30,896 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 1 of 10)...
+2022-10-08 16:28:32,669 [INFO ] com.erudika.scoold.ScooldServer - Started ScooldServer in 6.781 seconds (JVM running for 9.586)
+2022-10-08 16:28:40,917 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 2 of 10)...
+2022-10-08 16:30:32,565 [INFO ] com.erudika.scoold.ScooldServer - Starting ScooldServer using Java 17.0.4.1 on DESKTOP-J6Q99D4 with PID 17772 (W:\work\scoold\scoold\target\classes started by Sam Chon in W:\work\scoold)
+2022-10-08 16:30:32,580 [INFO ] com.erudika.scoold.ScooldServer - The following 1 profile is active: "development"
+2022-10-08 16:30:35,801 [INFO ] com.erudika.scoold.ScooldServer - Scoold server is listening on http://localhost:8000
+2022-10-08 16:30:35,825 [WARN ] com.erudika.para.client.ParaClient - Secret key appears to be invalid. Make sure you call 'signIn()' first.
+2022-10-08 16:30:36,628 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 1 of 10)...
+2022-10-08 16:30:38,286 [INFO ] com.erudika.scoold.ScooldServer - Started ScooldServer in 6.595 seconds (JVM running for 9.286)
+2022-10-08 16:32:10,382 [INFO ] com.erudika.scoold.ScooldServer - Starting ScooldServer using Java 17.0.4.1 on DESKTOP-J6Q99D4 with PID 20828 (W:\work\scoold\scoold\target\classes started by Sam Chon in W:\work\scoold)
+2022-10-08 16:32:10,397 [INFO ] com.erudika.scoold.ScooldServer - The following 1 profile is active: "development"
+2022-10-08 16:32:13,567 [INFO ] com.erudika.scoold.ScooldServer - Scoold server is listening on http://localhost:8000
+2022-10-08 16:32:13,591 [WARN ] com.erudika.para.client.ParaClient - Secret key appears to be invalid. Make sure you call 'signIn()' first.
+2022-10-08 16:32:14,472 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 1 of 10)...
+2022-10-08 16:32:16,234 [INFO ] com.erudika.scoold.ScooldServer - Started ScooldServer in 6.699 seconds (JVM running for 9.388)
+2022-10-08 16:32:32,186 [INFO ] com.erudika.scoold.ScooldServer - Starting ScooldServer using Java 17.0.4.1 on DESKTOP-J6Q99D4 with PID 12324 (W:\work\scoold\scoold\target\classes started by Sam Chon in W:\work\scoold)
+2022-10-08 16:32:32,204 [INFO ] com.erudika.scoold.ScooldServer - The following 1 profile is active: "development"
+2022-10-08 16:32:35,480 [INFO ] com.erudika.scoold.ScooldServer - Scoold server is listening on http://localhost:8000
+2022-10-08 16:32:35,498 [WARN ] com.erudika.para.client.ParaClient - Secret key appears to be invalid. Make sure you call 'signIn()' first.
+2022-10-08 16:32:36,360 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 1 of 10)...
+2022-10-08 16:33:19,481 [INFO ] com.erudika.scoold.ScooldServer - Starting ScooldServer using Java 17.0.4.1 on DESKTOP-J6Q99D4 with PID 21764 (W:\work\scoold\scoold\target\classes started by Sam Chon in W:\work\scoold)
+2022-10-08 16:33:19,496 [INFO ] com.erudika.scoold.ScooldServer - The following 1 profile is active: "development"
+2022-10-08 16:33:22,647 [INFO ] com.erudika.scoold.ScooldServer - Scoold server is listening on http://localhost:8000
+2022-10-08 16:33:22,674 [WARN ] com.erudika.para.client.ParaClient - Secret key appears to be invalid. Make sure you call 'signIn()' first.
+2022-10-08 16:33:23,503 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 1 of 10)...
+2022-10-08 16:33:25,255 [INFO ] com.erudika.scoold.ScooldServer - Started ScooldServer in 6.655 seconds (JVM running for 9.249)
+2022-10-08 16:33:33,564 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 2 of 10)...
+2022-10-08 16:33:43,440 [INFO ] com.erudika.scoold.ScooldServer - Starting ScooldServer using Java 17.0.4.1 on DESKTOP-J6Q99D4 with PID 2056 (W:\work\scoold\scoold\target\classes started by Sam Chon in W:\work\scoold)
+2022-10-08 16:33:43,453 [INFO ] com.erudika.scoold.ScooldServer - The following 1 profile is active: "development"
+2022-10-08 16:33:46,719 [INFO ] com.erudika.scoold.ScooldServer - Scoold server is listening on http://localhost:8000
+2022-10-08 16:33:46,741 [WARN ] com.erudika.para.client.ParaClient - Secret key appears to be invalid. Make sure you call 'signIn()' first.
+2022-10-08 16:33:47,546 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 1 of 10)...
+2022-10-08 16:33:49,320 [INFO ] com.erudika.scoold.ScooldServer - Started ScooldServer in 6.745 seconds (JVM running for 9.389)
+2022-10-08 16:34:43,505 [INFO ] com.erudika.scoold.ScooldServer - Starting ScooldServer using Java 17.0.4.1 on DESKTOP-J6Q99D4 with PID 19264 (W:\work\scoold\scoold\target\classes started by Sam Chon in W:\work\scoold)
+2022-10-08 16:34:43,509 [INFO ] com.erudika.scoold.ScooldServer - The following 1 profile is active: "development"
+2022-10-08 16:34:47,607 [INFO ] com.erudika.scoold.ScooldServer - No configuration file found - configuration saved in ./application.conf.
+2022-10-08 16:34:47,808 [INFO ] com.erudika.scoold.ScooldServer - Scoold server is listening on http://localhost:8000
+2022-10-08 16:34:47,834 [WARN ] com.erudika.para.client.ParaClient - Secret key appears to be invalid. Make sure you call 'signIn()' first.
+2022-10-08 16:34:48,746 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 1 of 10)...
+2022-10-08 16:34:50,875 [INFO ] com.erudika.scoold.ScooldServer - Started ScooldServer in 8.245 seconds (JVM running for 10.901)
+2022-10-08 16:34:58,772 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 2 of 10)...
+2022-10-08 16:35:08,813 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 3 of 10)...
+2022-10-08 16:35:18,834 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 4 of 10)...
+2022-10-08 16:35:28,846 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 5 of 10)...
+2022-10-08 16:35:38,884 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 6 of 10)...
+2022-10-08 16:35:48,927 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 7 of 10)...
+2022-10-08 16:35:58,945 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 8 of 10)...
+2022-10-08 16:36:08,963 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 9 of 10)...
+2022-10-08 16:36:18,983 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 10 of 10)...
+2022-10-08 16:39:17,011 [INFO ] com.erudika.scoold.ScooldServer - Starting ScooldServer using Java 17.0.4.1 on DESKTOP-J6Q99D4 with PID 22320 (W:\work\scoold\scoold\target\classes started by Sam Chon in W:\work\scoold)
+2022-10-08 16:39:17,026 [INFO ] com.erudika.scoold.ScooldServer - The following 1 profile is active: "development"
+2022-10-08 16:39:20,306 [INFO ] com.erudika.scoold.ScooldServer - Scoold server is listening on http://localhost:8000
+2022-10-08 16:39:20,329 [WARN ] com.erudika.para.client.ParaClient - Secret key appears to be invalid. Make sure you call 'signIn()' first.
+2022-10-08 16:39:21,185 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 1 of 10)...
+2022-10-08 16:39:22,880 [INFO ] com.erudika.scoold.ScooldServer - Started ScooldServer in 6.734 seconds (JVM running for 9.76)
+2022-10-08 16:39:38,316 [INFO ] com.erudika.scoold.ScooldServer - Starting ScooldServer using Java 17.0.4.1 on DESKTOP-J6Q99D4 with PID 17568 (W:\work\scoold\scoold\target\classes started by Sam Chon in W:\work\scoold)
+2022-10-08 16:39:38,330 [INFO ] com.erudika.scoold.ScooldServer - The following 1 profile is active: "development"
+2022-10-08 16:39:41,554 [INFO ] com.erudika.scoold.ScooldServer - Scoold server is listening on http://localhost:8000
+2022-10-08 16:39:41,575 [WARN ] com.erudika.para.client.ParaClient - Secret key appears to be invalid. Make sure you call 'signIn()' first.
+2022-10-08 16:39:42,416 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 1 of 10)...
+2022-10-08 16:39:44,095 [INFO ] com.erudika.scoold.ScooldServer - Started ScooldServer in 6.632 seconds (JVM running for 9.537)
+2022-10-08 16:39:52,480 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 2 of 10)...
+2022-10-08 16:40:03,549 [INFO ] com.erudika.scoold.ScooldServer - Starting ScooldServer using Java 17.0.4.1 on DESKTOP-J6Q99D4 with PID 5088 (W:\work\scoold\scoold\target\classes started by Sam Chon in W:\work\scoold)
+2022-10-08 16:40:03,564 [INFO ] com.erudika.scoold.ScooldServer - The following 1 profile is active: "development"
+2022-10-08 16:40:06,818 [INFO ] com.erudika.scoold.ScooldServer - Scoold server is listening on http://localhost:8000
+2022-10-08 16:40:06,840 [WARN ] com.erudika.para.client.ParaClient - Secret key appears to be invalid. Make sure you call 'signIn()' first.
+2022-10-08 16:40:07,663 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 1 of 10)...
+2022-10-08 16:40:09,351 [INFO ] com.erudika.scoold.ScooldServer - Started ScooldServer in 6.699 seconds (JVM running for 9.353)
+2022-10-08 16:40:47,429 [INFO ] com.erudika.scoold.ScooldServer - Starting ScooldServer using Java 17.0.4.1 on DESKTOP-J6Q99D4 with PID 5420 (W:\work\scoold\scoold\target\classes started by Sam Chon in W:\work\scoold)
+2022-10-08 16:40:47,443 [INFO ] com.erudika.scoold.ScooldServer - The following 1 profile is active: "development"
+2022-10-08 16:40:50,769 [INFO ] com.erudika.scoold.ScooldServer - Scoold server is listening on http://localhost:8000
+2022-10-08 16:40:50,786 [WARN ] com.erudika.para.client.ParaClient - Secret key appears to be invalid. Make sure you call 'signIn()' first.
+2022-10-08 16:40:51,598 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 1 of 10)...
+2022-10-08 16:40:53,326 [INFO ] com.erudika.scoold.ScooldServer - Started ScooldServer in 6.758 seconds (JVM running for 9.777)
+2022-10-08 16:41:01,625 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 2 of 10)...
+2022-10-08 16:41:11,660 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 3 of 10)...
+2022-10-08 16:41:21,685 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 4 of 10)...
+2022-10-08 16:41:31,703 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 5 of 10)...
+2022-10-08 16:41:41,738 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 6 of 10)...
+2022-10-08 16:42:06,324 [INFO ] com.erudika.scoold.ScooldServer - Starting ScooldServer using Java 17.0.4.1 on DESKTOP-J6Q99D4 with PID 11712 (W:\work\scoold\scoold\target\classes started by Sam Chon in W:\work\scoold)
+2022-10-08 16:42:06,339 [INFO ] com.erudika.scoold.ScooldServer - The following 1 profile is active: "development"
+2022-10-08 16:42:09,553 [INFO ] com.erudika.scoold.ScooldServer - Scoold server is listening on http://localhost:8000
+2022-10-08 16:42:09,571 [WARN ] com.erudika.para.client.ParaClient - Secret key appears to be invalid. Make sure you call 'signIn()' first.
+2022-10-08 16:42:10,414 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 1 of 10)...
+2022-10-08 16:42:12,115 [INFO ] com.erudika.scoold.ScooldServer - Started ScooldServer in 6.669 seconds (JVM running for 9.399)
+2022-10-08 16:42:20,445 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 2 of 10)...
+2022-10-08 16:42:35,531 [INFO ] com.erudika.scoold.ScooldServer - Starting ScooldServer using Java 17.0.4.1 on DESKTOP-J6Q99D4 with PID 19480 (W:\work\scoold\scoold\target\classes started by Sam Chon in W:\work\scoold)
+2022-10-08 16:42:35,546 [INFO ] com.erudika.scoold.ScooldServer - The following 1 profile is active: "development"
+2022-10-08 16:42:38,729 [INFO ] com.erudika.scoold.ScooldServer - Scoold server is listening on http://localhost:8000
+2022-10-08 16:42:38,749 [WARN ] com.erudika.para.client.ParaClient - Secret key appears to be invalid. Make sure you call 'signIn()' first.
+2022-10-08 16:42:39,625 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 1 of 10)...
+2022-10-08 16:42:41,400 [INFO ] com.erudika.scoold.ScooldServer - Started ScooldServer in 6.751 seconds (JVM running for 9.542)
+2022-10-08 16:42:59,575 [INFO ] com.erudika.scoold.ScooldServer - Starting ScooldServer using Java 17.0.4.1 on DESKTOP-J6Q99D4 with PID 6308 (W:\work\scoold\scoold\target\classes started by Sam Chon in W:\work\scoold)
+2022-10-08 16:42:59,591 [INFO ] com.erudika.scoold.ScooldServer - The following 1 profile is active: "development"
+2022-10-08 16:43:02,854 [INFO ] com.erudika.scoold.ScooldServer - Scoold server is listening on http://localhost:8000
+2022-10-08 16:43:02,874 [WARN ] com.erudika.para.client.ParaClient - Secret key appears to be invalid. Make sure you call 'signIn()' first.
+2022-10-08 16:43:03,772 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 1 of 10)...
+2022-10-08 16:43:05,589 [INFO ] com.erudika.scoold.ScooldServer - Started ScooldServer in 6.896 seconds (JVM running for 9.609)
+2022-10-08 16:43:18,260 [INFO ] com.erudika.scoold.ScooldServer - Starting ScooldServer using Java 17.0.4.1 on DESKTOP-J6Q99D4 with PID 14856 (W:\work\scoold\scoold\target\classes started by Sam Chon in W:\work\scoold)
+2022-10-08 16:43:18,277 [INFO ] com.erudika.scoold.ScooldServer - The following 1 profile is active: "development"
+2022-10-08 16:43:21,584 [INFO ] com.erudika.scoold.ScooldServer - Scoold server is listening on http://localhost:8000
+2022-10-08 16:43:21,602 [WARN ] com.erudika.para.client.ParaClient - Secret key appears to be invalid. Make sure you call 'signIn()' first.
+2022-10-08 16:43:22,428 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 1 of 10)...
+2022-10-08 16:43:24,146 [INFO ] com.erudika.scoold.ScooldServer - Started ScooldServer in 6.73 seconds (JVM running for 9.441)
+2022-10-08 16:43:32,475 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 2 of 10)...
+2022-10-08 16:43:42,525 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 3 of 10)...
+2022-10-08 16:43:52,566 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 4 of 10)...
+2022-10-08 16:44:09,058 [INFO ] com.erudika.scoold.ScooldServer - Starting ScooldServer using Java 17.0.4.1 on DESKTOP-J6Q99D4 with PID 18264 (W:\work\scoold\scoold\target\classes started by Sam Chon in W:\work\scoold)
+2022-10-08 16:44:09,072 [INFO ] com.erudika.scoold.ScooldServer - The following 1 profile is active: "development"
+2022-10-08 16:44:12,568 [INFO ] com.erudika.scoold.ScooldServer - Scoold server is listening on http://localhost:8000
+2022-10-08 16:44:12,586 [WARN ] com.erudika.para.client.ParaClient - Secret key appears to be invalid. Make sure you call 'signIn()' first.
+2022-10-08 16:44:13,364 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 1 of 10)...
+2022-10-08 16:44:15,157 [INFO ] com.erudika.scoold.ScooldServer - Started ScooldServer in 6.944 seconds (JVM running for 9.593)
+2022-10-08 16:44:23,401 [ERROR] c.erudika.scoold.utils.ScooldUtils - No connection to Para backend. Retrying connection in 10s (attempt 2 of 10)...
+2022-10-08 16:44:32,633 [INFO ] com.erudika.scoold.ScooldServer - Starting ScooldServer using Java 17.0.4.1 on DESKTOP-J6Q99D4 with PID 25140 (W:\work\scoold\scoold\target\classes started by Sam Chon in W:\work\scoold)
+2022-10-08 16:44:32,647 [INFO ] com.erudika.scoold.ScooldServer - The following 1 profile is active: "production"
+2022-10-08 16:44:35,965 [INFO ] com.erudika.scoold.ScooldServer - Scoold server is listening on http://localhost:8000
+2022-10-08 16:44:37,487 [INFO ] com.erudika.scoold.ScooldServer - Connected to Para on https://paraio.com with credentials for 'app:dsdn'.
+2022-10-08 16:44:39,134 [INFO ] com.erudika.scoold.ScooldServer - Started ScooldServer in 7.361 seconds (JVM running for 10.071)

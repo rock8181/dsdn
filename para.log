@@ -1,0 +1,2 @@
+2022-10-08 16:34:41,966 [WARN ] com.erudika.para.core.utils.Config - Failed to load configuration file 'application.(conf|json|properties)' for namespace 'para' - .\application.conf: java.io.FileNotFoundException: .\application.conf (지정된 파일을 찾을 수 없습니다)
+2022-10-08 16:34:42,120 [WARN ] com.erudika.para.core.utils.Config - Failed to load configuration file 'application.(conf|json|properties)' for namespace 'scoold' - .\application.conf: java.io.FileNotFoundException: .\application.conf (지정된 파일을 찾을 수 없습니다)
