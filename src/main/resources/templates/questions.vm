@@ -67,7 +67,7 @@
 			#end
 		#end
 
-		<h4 class="hide-on-large-only">#questionsTitle()</h4>
+		<h1 class="hide-on-large-only">#questionsTitle()</h1>
 
 		<div class="chips-container">
 			#set($sortarr = {'votes': "", 'newest': "", 'activity': "", 'unanswered': "", 'unapproved': "", 'filter': ""} )

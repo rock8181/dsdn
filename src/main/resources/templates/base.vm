@@ -177,7 +177,7 @@
 
 							<div class="brand-logo">
 								<a href="$!{CONTEXT_PATH}/">
-									<img src="$logoUrl" class="scoold-logo" width="$logoWidth" alt="scoold logo">
+									<img src="$logoUrl" class="scoold-logo" width="$logoWidth" height="64px" alt="scoold logo">
 								</a>
 							</div>
 

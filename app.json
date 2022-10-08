@@ -31,7 +31,7 @@
 		},
 		"scoold_app_name": {
 			"description": "The name of the app.",
-			"value": "Scoold"
+			"value": "Scoold_test"
 		},
 		"scoold_host_url": {
 			"description": "The public URL of Scoold (affects CSP header), which will be the main entry point of your site, e.g. https://scoold.herokuapp.com ",
