@@ -2442,19 +2442,19 @@ public class ScooldConfig extends Config {
 
 	@Documented(position = 2350,
 			identifier = "logo_url",
-			value = "/images/talk_1.gif",
+			value = "/images/DSDN_log.svg",
 			category = "Frontend Assets",
 			description = "The URL of the logo in the nav bar. Use a PNG, SVG, JPG or WebP format.")
 	public String logoUrl() {
-		return getConfigParam("logo_url", imagesLink() + "/talk_1.gif");
+		return getConfigParam("logo_url", imagesLink() + "/DSDN_log.svg");
 	}
 	@Documented(position = 2360,
 	identifier = "small_logo_url",
-	value = "/images/logo_samsung.svg",
+	value = "/images/DSDN_log.svg",
 	category = "Frontend Assets",
 	description = "The URL of a smaller logo (only use PNG/JPG!). Used in transactional emails and the meta `og:image`.")
 	public String logoSmallUrl() {
-	return getConfigParam("small_logo_url", serverUrl() + imagesLink() + "/logo_samsung.svg");
+	return getConfigParam("small_logo_url", serverUrl() + imagesLink() + "/DSDN_log.svg");
 	}
 	/*
 	@Documented(position = 2360,
