@@ -11,7 +11,7 @@
 	],
 	"website": "https://scoold.com/",
 	"repository": "https://github.com/Erudika/scoold",
-	"logo": "https://scoold.com/logosq.png",
+	"logo": "http://localhost/images/DSDN_log.svg",
 	"env": {
 		"scoold_para_access_key": {
 			"description": "Your Para access key.",
@@ -52,7 +52,7 @@
 		},
 		"scoold_meta_description": {
 			"description": "Description meta tag value.",
-			"value": "Scoold is an open source Q&A platform for teams."
+			"value": "DSDN은 DS부분 개발자 커뮤니티 서비스입니다."
 		},
 		"scoold_support_email": {
 			"description": "System email address.",
